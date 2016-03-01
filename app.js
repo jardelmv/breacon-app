@@ -141,7 +141,7 @@ app.ui.displayDeviceList = function()
 
 			// Create tag for device data.
 			var element = $(
-				'<li>' +
+				'<li class="table-view-cell">' +
 				'<strong>' + device.name + '</strong><br />' +
 					(evothings.os.isIOS() ? '' : device.address + '<br />') +
 					device.timeStamp + '<br />' +
