@@ -24,6 +24,10 @@ app.initialize = function()
 
 app.onDeviceReady = function()
 {
+	var timeNow = Date.now();
+	app.startScan(app.ui.deviceFound);
+	app.ui.displayStatus('Scanning...  ' + timeNow);
+	
 	dbl = new PouchDB("breacon", {auto_compaction: true});
 	dbr = new PouchDB("https://jardelmv.cloudant.com/breacon");
 	dbl.sync(dbr).on('complete', function () {
