@@ -71,8 +71,8 @@ app.stopScan = function()
 app.ui.onStartScanButton = function()
 {
 	var timeNow = Date.now();
-	app.startScan(app.ui.deviceFound);
 	app.ui.displayStatus('Scanning...  ' + timeNow);
+	app.startScan(app.ui.deviceFound);
 	app.ui.displayDeviceList();
 	app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 1000);
 	//app.ui.updateTimer = setTimeout(app.ui.onStartScanButton, 2000);
