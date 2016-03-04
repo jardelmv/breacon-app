@@ -8,13 +8,12 @@
 <name>breacon 1.0</name>
 <description> Reading BLE Beacons </description>
 <author email="jardel@jatecnologia.com" href="http://jatecnologia.com"> Jardel Vieira </author>
-<content src="camera.html" />
+<content src="index.html" />
 
 <gap:plugin name="cordova-plugin-device-motion" source="npm" />
 <gap:plugin name="cordova-plugin-vibration" source="npm" />
-<plugin name="com.evothings.ble" spec="1.0.0" source="pgb" />
 <gap:plugin name="com.keith.cordova.plugin.canvascamera" />
-
+<plugin name="com.evothings.ble" spec="1.0.0" source="pgb" />
 
 <access origin="*" /> 
 <plugin name="cordova-plugin-whitelist" version="1" />
