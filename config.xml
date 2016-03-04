@@ -12,7 +12,6 @@
 
 <gap:plugin name="cordova-plugin-device-motion" source="npm" />
 <gap:plugin name="cordova-plugin-vibration" source="npm" />
-<gap:plugin name="com.keith.cordova.plugin.canvascamera" />
 <plugin name="com.evothings.ble" spec="1.0.0" source="pgb" />
 
 <access origin="*" /> 
